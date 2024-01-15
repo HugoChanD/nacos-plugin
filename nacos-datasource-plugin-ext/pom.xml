@@ -17,6 +17,10 @@
         <module>nacos-postgresql-datasource-plugin-ext</module>
         <module>nacos-oracle-datasource-plugin-ext</module>
         <module>nacos-dm-datasource-plugin-ext</module>
+        <module>nacos-oscar-datasource-plugin-ext</module>
+        <module>nacos-kingbase-datasource-plugin-ext</module>
+        <module>nacos-highgo-datasource-plugin-ext</module>
+        <module>nacos-sqlserver-datasource-plugin-ext</module>
     </modules>
 
     <properties>

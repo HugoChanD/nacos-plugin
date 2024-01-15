@@ -14,30 +14,20 @@
  * limitations under the License.
  */
 
-package com.alibaba.nacos.plugin.datasource.constants;
+package com.alibaba.nacos.plugin.datasource.impl.sqlserver;
+
+import com.alibaba.nacos.plugin.datasource.constants.DatabaseTypeConstant;
+import com.alibaba.nacos.plugin.datasource.impl.base.BaseConfigTagsRelationMapper;
 
 /**
- * DatabaseType Constant.
- *
- * @author Long Yu
+ * @author chenxt
  **/
-public class DatabaseTypeConstant {
 
-    public static final String POSTGRESQL = "postgresql";
-
-
-    public static final String MYSQL = "mysql";
-
-    public static final String ORACLE = "oracle";
-  
-    public static final String DM = "dm";
-
-    public static final String OSCAR = "oscar";
-
-    public static final String KINGBASE = "kingbase";
-
-    public static final String HIGHGO = "highgo";
-
-    public static final String SQLSERVER="sqlserver";
-
+public class ConfigTagsRelationMapperBySqlserver extends BaseConfigTagsRelationMapper{
+    
+    @Override
+    public String getDataSource() {
+        return DatabaseTypeConstant.SQLSERVER;
+    }
+    
 }
